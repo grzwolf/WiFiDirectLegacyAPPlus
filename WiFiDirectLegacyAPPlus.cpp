@@ -43,7 +43,7 @@ int _tmain(int argc, _TCHAR* argv[])
         console.ExecuteCommand(s2ws(buf));
         buf = "pass 12345678";
         console.ExecuteCommand(s2ws(buf));
-        buf = "autoaccept 0";
+        buf = "autoaccept 1";
         console.ExecuteCommand(s2ws(buf));
         buf = "start";
         console.ExecuteCommand(s2ws(buf));
@@ -56,7 +56,7 @@ int _tmain(int argc, _TCHAR* argv[])
             console.ExecuteCommand(buf);
             _stprintf_s(buf, sizeof(buf) / sizeof(TCHAR), _T("pass %s"), argv[2]);
             console.ExecuteCommand(buf);
-            _stprintf_s(buf, sizeof(buf) / sizeof(TCHAR), _T("autoaccept 0"));
+            _stprintf_s(buf, sizeof(buf) / sizeof(TCHAR), _T("autoaccept 1"));
             console.ExecuteCommand(buf);
             _stprintf_s(buf, sizeof(buf) / sizeof(TCHAR), _T("start"));
             console.ExecuteCommand(buf);
